@@ -1,0 +1,33 @@
+%Cesar David Lopez Cazares%
+%1588987%
+%Actividad 2%
+
+%Ecuaciones simultaneas%
+syms x y
+eqs=[3*x^2-2*x+y==7,x*y+x==5]
+vars=[x,y]
+[Solx,Soly]=solve(eqs,vars)
+
+%Ecuaciones simultaneas%
+syms x c y
+y1=2*x-3*c*y
+y2=c*x+2*y
+eqs=[y1==7,y2==5]
+vars=[x,y]
+[Solx,Soly]=solve(eqs,vars)
+
+%Ecuación cuadrática%
+syms a b x
+y= x^2 + a*x + b;
+soln=solve(y ==0,x)
+   
+%Ecuación no lineal%
+syms a x b
+A=2*exp(x)+3*cos(x)
+solve(A==0,x)
+
+%Ecuación lineal%
+syms a x
+y= (2*x + a);
+soln = solve (y==5,x)
+ 
